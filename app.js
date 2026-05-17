@@ -68,7 +68,7 @@ function extractVideoIds(text) {
 function loginWithGoogle() {
   const params = new URLSearchParams({
     client_id: CLIENT_ID,
-    redirect_uri: location.origin + '/auth-callback.html',
+    redirect_uri: location.origin + '/watch-later-pwa/auth-callback.html',
     response_type: 'token',
     scope: 'https://www.googleapis.com/auth/youtube',
     include_granted_scopes: 'true'
