@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>認証中...</title></head>
+<body>
+<script>
+// Googleからリダイレクトされた際にアクセストークンを取得して
+// 親ウィンドウ（app.js）に送る
+const hash = new URLSearchParams(location.hash.slice(1));
+const token = hash.get('access_token');
+if (token && window.opener) {
+  window.opener.postMessage({ type: 'OAUTH_TOKEN', token }, location.origin);
+  window.close();
+} else {
+  document.body.textContent = '認証に失敗しました。閉じて再試行してね。';
+}
+</script>
+</body>
+</html>
