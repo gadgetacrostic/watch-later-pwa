@@ -3,7 +3,7 @@
 // =====================================================
 
 // ★ここにGoogle Cloud で取得したWebアプリ用クライアントIDを入れてね
-const CLIENT_ID = 'YOUR_CLIENT_ID.apps.googleusercontent.com';
+const CLIENT_ID = '955002636085-qugjjokvreomao7ti0tftd7vb4q7v3ac.apps.googleusercontent.com';
 
 const CUSTOM_PLAYLIST_NAME = '後で見る';
 const YT_REGEX = /(?:(?:www\.)?youtube(?:-nocookie)?\.com\/(?:watch\?(?:[^"'\s]*&)?v=|embed\/|shorts\/|v\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/g;
