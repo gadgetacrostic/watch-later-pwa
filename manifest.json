@@ -19,7 +19,7 @@
     }
   ],
   "share_target": {
-    "action": "/share",
+    "action": "/watch-later-pwa/",
     "method": "GET",
     "params": {
       "title": "title",
